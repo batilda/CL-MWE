@@ -1,0 +1,306 @@
+/*** HEADER ***/
+
+header {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header__top {
+    width: 100%;
+    min-height: 108px;
+    background-color: #474747;
+    background-image: url("../img/sprite-all-pages.png");
+    background-repeat: no-repeat;
+    background-position: center -50px;
+}
+
+.header__top__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 10px;
+    padding: 0;
+    max-width: 980px;
+    font-family: Arial;
+}
+
+.header__logo {
+    margin-top: 5px;
+    width: 190px;
+    height: 65px;
+    margin-right: 100px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__search-input {
+    float: left;
+    width: 250px;
+    height: 24px;
+    padding-left: 35px;
+    font-size: 13px;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #C8C8C8), color-stop(70%, #E8E8E8));
+    background: transparent url(../img/sprite-all-pages.png) no-repeat scroll -214px -581px;
+    cursor: pointer;
+}
+
+.header__search-button {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 24px;
+    font-size: 13px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(to bottom, #8E1A1A 30%, #7C1212 70%);
+    cursor: pointer;
+}
+
+.header__search-button:hover,
+.header__search-button:focus {
+    width: 70px;
+    background: linear-gradient(to bottom, #d51402 0%, #d51402 100%);
+}
+
+.header__search-button:active {
+    font-size: 15px;
+}
+
+.header__list--socials {
+    display: flex;
+    margin: 0 30px 0 0;
+    padding: 0;
+    min-width: 180px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__socials {
+    display: block;
+    width: 29px;
+    height: 29px;
+    font-size: 0;
+    background-image: url("../img/common.png");
+    background-repeat: no-repeat;
+}
+
+.header__socials--youtube {
+    background-position: 0 -73px;
+}
+
+.header__socials--googleplus {
+    width: 28px;
+    background-position: -58px -73px;
+}
+
+.header__socials--twitter {
+    width: 28px;
+    background-position: -111px 0;
+}
+
+.header__socials--facebook {
+    background-position: -110px -28px;
+}
+
+.header__socials--trustpilot {
+    background-position: -29px -73px;
+}
+
+.header__socials:hover,
+.header__socials:focus {
+    transform: scale(1.1);
+}
+
+.header__menu {
+	position: relative;
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+}
+
+.header__menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__menu__item:first-child .header__menu__link{
+    border-top-left-radius: 5px;
+}
+
+.header__menu__item:last-child .header__menu__link{
+    border-top-right-radius: 5px;
+}
+
+.header__menu__item {
+    text-decoration: none;
+}
+
+.header__menu__link {
+    display: block;
+    width: 125px;
+    height: 40px;
+    margin-right: 2px;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    color: #eecb83;
+    background: linear-gradient(to bottom, #6a6a6a 0%, #6a6a6a 50%, #555555 50% ,#555555 100%);
+}
+
+.header__menu__link:hover,
+.header__menu__link:focus {
+    color: #eecb83;
+    background: linear-gradient(to bottom, #919191 0%, #919191 50%, #555555 50% ,#555555 100%);
+}
+
+/*.header__menu__link:active,*/
+.js-header__menu__link--active {
+    color: #333;
+    background: linear-gradient(to bottom, #eff1ee, #eff1ee);
+}
+
+.header__submenu__list {
+	position:absolute;
+	display: none;
+	top: 100%;
+	left: 0;    
+}
+
+.js-header__submenu__list--active {
+    margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    flex-wrap: wrap;
+	width: 625px;
+	height: 35px;
+    list-style: none;
+	background-color: #f7f7f7;
+}
+
+.header__submenu__item {	
+	background-color: #cccccc;
+	padding: 0 26px;
+    box-shadow: 3px 0 #cecece;
+}
+
+.header__submenu__link {
+    display: block;
+    margin-right: 2px;
+    font-size: 13px;
+    color: #333;    
+    font-family: inherit;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;    
+}
+
+
+.header__submenu__item:last-child .header__submenu__link {
+    box-shadow: none;
+}
+
+.header__whiteline {	
+	min-height: 35px;
+}
+
+.header__redline {
+    min-height: 29px;
+    background-color: #a82020;
+    background-image: url("../img/sprite-all-pages.png");
+    background-repeat: no-repeat;
+    background-position: center -808px;
+    color: #ffffff;
+    border-top: 1px solid #643336;
+    border-bottom: 1px solid #643336;
+}
+
+.header__redline__container {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    height: 100%;
+    align-items: center;
+}
+
+.header__redline__caption {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.header__advertising {
+    text-decoration: underline;
+    margin-right: 14px;
+    margin-left: auto;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header__advertising__window {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 440px;
+    margin: 0;
+    padding: 15px 15px;
+    color: #000000;
+    background-color: #fce9bd;
+    border: 3px solid #a5a5a5;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.header__advertising__close {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 26px;
+    height: 26px;
+    background: linear-gradient(to bottom, #f79a92, #d12a00);
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 0.7px;
+    background-color: #e25a3f;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.header__advertising__close::before,
+.header__advertising__close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    height: 3px;
+    width: 18px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.header__advertising__close::after {
+    transform: rotate(-45deg);
+}
+
+.header__advertising__content {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "SegoeUIRegular", "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}

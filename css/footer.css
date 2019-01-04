@@ -1,0 +1,163 @@
+/*** FOOTER ***/
+
+footer {
+  position: relative;
+  font-family: Arial;
+  font-size: 12px;
+  color: #ccc;
+  background-color: #474747;
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 25px;
+
+  background-image: url("../img/sprite-all-pages.png");
+  background-position: -10px -50px;
+  background-repeat: no-repeat;
+}
+
+.footer__column {
+
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__caption--small {
+  font-size: 13px;
+}
+
+.footer__caption--big {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer__link {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.footer__list--socials {
+  display: flex;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 25px;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  display: block;
+  width: 29px;
+  height: 29px;
+  font-size: 0;
+  background-image: url("../img/common.png");
+  background-repeat: no-repeat;
+}
+
+.footer__socials--youtube {
+  background-position: 0 -73px;
+}
+
+.footer__socials--googleplus {
+  width: 28px;
+  background-position: -58px -73px;
+}
+
+.footer__socials--twitter {
+  width: 28px;
+  background-position: -111px 0;
+}
+
+.footer__socials--facebook {
+  background-position: -110px -28px;
+}
+
+.footer__socials--trustpilot {
+  background-position: -29px -73px;
+}
+
+.footer__socials:hover,
+.footer__socials:focus {
+  transform: scale(1.1);
+}
+
+.footer__form__email {
+  display: block;
+  margin: 0 auto 10px;
+  width: 230px;
+  height: 26px;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #111;
+  background: linear-gradient(to bottom, #C8C8C8 30%, #E8E8E8 70%);
+}
+
+.footer__form__signup {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2px;
+  width: 130px;
+  min-height: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background: linear-gradient(to bottom, #8E1A1A 30%, #7C1212 70%);
+}
+
+.footer__form__signup:hover {
+  background: linear-gradient(to bottom, #d51402, #d51402);
+}
+
+.footer__form__signup:focus {
+  font-size: 15px;
+}
+
+.footer__bottom {
+  color: #999;
+}
+
+.footer__copyright {
+  padding-left: 25px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer__copyright__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__copyright__link:hover,
+.footer__copyright__link:focus {
+  color: #f8d286;
+}
+
+.footer__content {
+  width: 100%;
+  text-align: justify;
+}
+
+.footer__content:last-child {
+  padding-bottom: 20px;
+}

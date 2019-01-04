@@ -1,0 +1,154 @@
+/* buttons */
+
+.apply-btn {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+	font-family: "SegoeUIRegular", "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.apply-btn--main {
+  width: 124px;
+  height: 37px;
+  line-height: 37px;
+  background: linear-gradient(to bottom, #fd7200 0%, #fd7200 40%, #fe811c 40%, #fe811c, #fd7200);
+  transition: all linear 1s;
+}
+
+.apply-btn--main:hover,
+.apply-btn--main:focus {
+  background: linear-gradient(to bottom, #fd6100 0%, #dc600a 100%, #fd6100);
+  transition: all linear 1s;
+}
+
+.apply-btn--now {
+  width: 134px;
+  height: 47px;
+  line-height: 47px;
+  background: linear-gradient(to bottom, #f6483e, #ed2f2f);
+}
+
+.apply-btn--now:hover,
+.apply-btn--now:focus {
+  background: linear-gradient(to bottom, #c3150b, #ba0c0c);
+}
+
+.compare-container {
+  display: flex;
+	justify-content: center;
+}
+
+.compare-indicator {  
+  position: relative;
+	float: left;
+	margin-right: 5px;
+  width: 17px;  
+  height: 17px;
+  background-image: url("../img/compare-det.png");
+	background-repeat: no-repeat;
+	background-position: 0 -20px;
+  cursor: pointer;
+}
+
+.compare-container input[type="checkbox"]:checked + .compare-indicator {
+  background-position: 0 0;
+}
+
+
+.compare-text {
+  float: left;
+  display: block;  
+  font-size: 14px;
+	text-align: center;
+}
+
+
+.card-name__link {
+  font-family: "SegoeUIRegular", "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: underline;
+  text-align: center;
+  color: #333;
+}
+
+.card-name__link--big {
+  font-size: 16px;
+  line-height: 16px;
+	text-decoration: none;
+}
+
+.card-name__link:hover,
+.card-name__link:focus {
+  color: #808080;
+}
+
+
+/* звездочки */
+
+.stars-container {
+  position: relative;
+}
+
+.stars {
+  position: relative;
+	margin-left: -12px;
+  width: 114px;
+	height: 21px;
+	font-family: Arial, sans-serif;
+  line-height: normal;
+	background-image: url("../img/sprite-cl-mve.png");
+  cursor: pointer;
+}
+
+.stars::after {
+  position: absolute;
+  top: -5px;
+  right: 0;
+	transform: translate(110%, 10%);
+  width: 16px;
+  height: 16px;
+  content: "\ea26";
+  font-family: 'iconfont';
+  font-size: 12px;
+	color: #808080;
+}
+
+.stars--1 {
+  background-position: 0 0;
+}
+
+.stars--2 {
+  background-position: 0 0;
+}
+
+.stars--3 {
+  background-position: 0 0;
+}
+
+.stars--4 {
+  background-position: 0 0;
+}
+
+.stars--5 {
+  background-position: 0 0;
+}
+
+.tooltip__template {
+  display: none;
+}
+
+.tooltipster-sidetip .tooltipster-box--stars {
+	background: #565656;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+/* Всякое-разное */
+
+.clearfix {
+  clear: both;
+}
