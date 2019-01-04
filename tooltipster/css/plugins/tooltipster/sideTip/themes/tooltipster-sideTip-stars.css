@@ -1,0 +1,91 @@
+.tooltipster-sidetip.tooltipster-stars .tooltipster-box
+{  
+	background: #fff;
+	font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+	border: 3px solid #868a8c;
+	border-radius: 5px;
+}
+.tooltipster-sidetip.tooltipster-stars .tooltipster-content
+{
+	color: #000;
+}
+
+.tooltipster-sidetip.tooltipster-stars .tooltipster-box .tooltipster-content .tooltipster-close
+{
+  content: "Close me";
+  background-color: gold;
+}
+
+.tooltipster-sidetip.tooltipster-stars .tooltipster-arrow
+{
+	height: 9px;
+	margin-left: -9px;
+	width: 18px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-left .tooltipster-arrow,
+.tooltipster-sidetip.tooltipster-stars.tooltipster-right .tooltipster-arrow
+{
+	height: 18px;
+	margin-left: 0;
+	margin-top: -9px;
+	width: 9px;
+}
+.tooltipster-sidetip.tooltipster-stars .tooltipster-arrow-background
+{
+	border: 9px solid transparent;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-bottom .tooltipster-arrow-background
+{
+	border-bottom-color: #fff;
+  top: 4px;
+  left: 2px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-left .tooltipster-arrow-background
+{
+	border-left-color: #fff;
+	left: -2px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-right .tooltipster-arrow-background
+{
+	border-right-color: #fff;
+	left: 4px;
+  top: 2px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-top .tooltipster-arrow-background
+{
+	border-top-color: #fff;
+  top: -2px;
+  left: 2px;
+}
+.tooltipster-sidetip.tooltipster-stars .tooltipster-arrow-border
+{
+	border: 11px solid transparent;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-bottom .tooltipster-arrow-border
+{
+	border-bottom-color: #868a8c;
+  top: -2px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-left .tooltipster-arrow-border
+{
+	border-left-color: #868a8c;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-right .tooltipster-arrow-border
+{
+	border-right-color: #868a8c;
+  left: -2px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-top .tooltipster-arrow-border
+{
+	border-top-color: #868a8c;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-bottom .tooltipster-arrow-uncropped
+{
+	top: -9px;
+}
+.tooltipster-sidetip.tooltipster-stars.tooltipster-right .tooltipster-arrow-uncropped
+{
+	left: -9px;
+}
