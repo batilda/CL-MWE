@@ -130,6 +130,7 @@ header {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .header__menu__item:first-child .header__menu__link{
@@ -147,12 +148,12 @@ header {
 .header__menu__link {
     display: block;
     width: 125px;
-    height: 40px;
+    min-height: 40px;
     margin-right: 2px;
+    padding: 10px 0;
     font-family: inherit;
     text-transform: uppercase;
     text-align: center;
-    line-height: 40px;
     color: #eecb83;
     background: linear-gradient(to bottom, #6a6a6a 0%, #6a6a6a 50%, #555555 50% ,#555555 100%);
 }
@@ -173,7 +174,7 @@ header {
 	position:absolute;
 	display: none;
 	top: 100%;
-	left: 0;    
+	left: 0;
 }
 
 .js-header__submenu__list--active1 {
@@ -189,7 +190,7 @@ header {
 	background-color: #f7f7f7;
 }
 
-.header__submenu__item {	
+.header__submenu__item {
 	background-color: #cccccc;
 	padding: 0 26px;
     box-shadow: 3px 0 #cecece;
@@ -199,11 +200,11 @@ header {
     display: block;
     margin-right: 2px;
     font-size: 13px;
-    color: #333;    
+    color: #333;
     font-family: inherit;
     line-height: 35px;
     text-transform: uppercase;
-    text-align: center;    
+    text-align: center;
 }
 
 
@@ -211,7 +212,7 @@ header {
     box-shadow: none;
 }
 
-.header__whiteline1 {	
+.header__whiteline1 {
 	min-height: 35px;
 }
 
@@ -307,4 +308,88 @@ header {
     font-size: 14px;
     line-height: 22px;
     text-align: justify;
+}
+
+
+@media screen and (max-width: 962px) {
+
+  .header__top__container {
+    padding: 0 80px;
+  }
+
+  .header-962 {
+    display: none;
+  }
+
+  .header__menu__link {
+    width: 100px;
+    min-height: 30px;
+    font-size: 13px;
+  }
+
+  .header__redline__caption {
+    font-size: 14px;
+  }
+
+  .js-header__advertising {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 800px) /* Tablet */ {
+
+  .header__top__container {
+    padding: 0 20px;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__search-input {
+    width: 180px;
+  }
+
+  .header__menu {
+    width: 100%
+  }
+
+  .header__menu__list {
+    width: 100%
+  }
+
+  .header__menu__item {
+    width: 20%;
+  }
+
+  .header__menu__link {
+    width: 100%;
+  }
+
+  .header__redline {
+    background-image: none;
+  }
+
+  .header__advertising {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) /* Phone */ {
+
+  .header__search {
+    display: none;
+  }
+
+  /* показывать лупу со ссылкой на https://www.info-credit.com/search.php */
+
+  .header__menu__link {
+    padding: 2px 0;
+    min-height: 25px;
+    font-size: 10px;
+  }
+
+  .header__redline__caption {
+    font-size: 12px;
+  }
 }
