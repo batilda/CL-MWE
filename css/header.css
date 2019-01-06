@@ -383,7 +383,7 @@ header {
     }
 }
 
-@media screen and (max-width: 480px) /* Phone */ {
+@media screen and (max-width: 480px) /*  Tablet mini */ {
 
     .header__search {
         display: none;
@@ -397,8 +397,6 @@ header {
         background-image:  url("../img/common.png");
         background-position: -140px -41px;
     }
-
-    /* показывать лупу со ссылкой на https://www.info-credit.com/search.php */
 
     .header__menu__link {
         padding: 2px 0;
