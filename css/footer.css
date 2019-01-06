@@ -161,3 +161,29 @@ footer {
 .footer__content:last-child {
   padding-bottom: 20px;
 }
+
+@media screen  and (max-width: 800px) /* Tablet */ {
+
+  .footer__top {
+    flex-wrap: wrap;
+    padding: 0 10px;
+    background-image: none
+  }
+
+  .footer__column {
+    padding: 0 5px;
+  }
+
+  .footer__content {
+    padding: 0 10px;
+  }
+
+}
+
+@media screen  and (max-width: 800px) /* Phone */ {
+
+  .footer__link {
+    font-size: 12px;
+  }
+
+}

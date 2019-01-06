@@ -960,13 +960,10 @@
         max-width: 10000px;
     }
 
-    .footer__top {
-        flex-wrap: wrap;
-    }
 }
 
 
-@media screen  and (max-width: 800px) and (min-width: 451px) /* Tablet for sidebar*/ {
+@media screen  and (max-width: 800px) and (min-width: 451px) /* Tablet */ {
 
     .sidebar__block--card {
         flex-direction: row;
@@ -1100,6 +1097,14 @@
         width: 20%;
     }
 
+    .questions {
+        padding: 0 10px;
+    }
+
+    .references {
+        padding: 0 10px;
+    }
+
 }
 
 
@@ -1143,6 +1148,10 @@
         width: 90%;
     }
 
+    .questions {
+        padding: 0 10px;
+    }
+
     .questions__buttons {
         width: 100%;
     }
@@ -1155,5 +1164,9 @@
 
     .questions__button--yellow {
         margin-bottom: 17px;
+    }
+
+    .references {
+        padding: 0 10px;
     }
 }
