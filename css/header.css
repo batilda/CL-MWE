@@ -36,7 +36,7 @@ header {
 }
 
 .header__search {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .header__search-input {
@@ -48,6 +48,10 @@ header {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #C8C8C8), color-stop(70%, #E8E8E8));
     background: transparent url(../img/sprite-all-pages.png) no-repeat scroll -214px -581px;
     cursor: pointer;
+}
+
+.header__search-mobile {
+    display: none;
 }
 
 .header__search-button {
@@ -118,7 +122,7 @@ header {
 }
 
 .header__menu {
-	position: relative;
+    position: relative;
     display: block;
     width: 650px;
     margin: 0 auto;
@@ -158,10 +162,14 @@ header {
     background: linear-gradient(to bottom, #6a6a6a 0%, #6a6a6a 50%, #555555 50% ,#555555 100%);
 }
 
-.header__menu__link:hover,
-.header__menu__link:focus {
+.header__menu__link:hover
+{
     color: #eecb83;
     background: linear-gradient(to bottom, #919191 0%, #919191 50%, #555555 50% ,#555555 100%);
+}
+
+.header__menu__link:focus {
+    outline: 1px solid #eecb83;
 }
 
 .header__menu__link:active,
@@ -171,28 +179,28 @@ header {
 }
 
 .header__submenu__list {
-	position:absolute;
-	display: none;
-	top: 100%;
-	left: 0;
+    position:absolute;
+    display: none;
+    top: 100%;
+    left: 0;
 }
 
 .js-header__submenu__list--active1 {
     margin: 0 auto;
-	padding: 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-	width: 625px;
-	height: 35px;
+    width: 625px;
+    height: 35px;
     list-style: none;
-	background-color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 .header__submenu__item {
-	background-color: #cccccc;
-	padding: 0 26px;
+    background-color: #cccccc;
+    padding: 0 26px;
     box-shadow: 3px 0 #cecece;
 }
 
@@ -213,7 +221,7 @@ header {
 }
 
 .header__whiteline1 {
-	min-height: 35px;
+    min-height: 35px;
 }
 
 .header__redline {
@@ -313,83 +321,92 @@ header {
 
 @media screen and (max-width: 962px) {
 
-  .header__top__container {
-    padding: 0 80px;
-  }
+    .header__top__container {
+        padding: 0 80px;
+    }
 
-  .header-962 {
-    display: none;
-  }
+    .header-962 {
+        display: none;
+    }
 
-  .header__menu__link {
-    width: 100px;
-    min-height: 30px;
-    font-size: 13px;
-  }
+    .header__menu__link {
+        width: 100px;
+        min-height: 30px;
+        font-size: 13px;
+    }
 
-  .header__redline__caption {
-    font-size: 14px;
-  }
+    .header__redline__caption {
+        font-size: 14px;
+    }
 
-  .js-header__advertising {
-    font-size: 13px;
-  }
+    .js-header__advertising {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 800px) /* Tablet */ {
 
-  .header__top__container {
-    padding: 0 20px;
-  }
+    .header__top__container {
+        padding: 0 20px;
+    }
 
-  .header__logo {
-    margin: 0;
-  }
+    .header__logo {
+        margin: 0;
+    }
 
-  .header__search-input {
-    width: 180px;
-  }
+    .header__search-input {
+        width: 180px;
+    }
 
-  .header__menu {
-    width: 100%
-  }
+    .header__menu {
+        width: 100%
+    }
 
-  .header__menu__list {
-    width: 100%
-  }
+    .header__menu__list {
+        width: 100%
+    }
 
-  .header__menu__item {
-    width: 20%;
-  }
+    .header__menu__item {
+        width: 20%;
+    }
 
-  .header__menu__link {
-    width: 100%;
-  }
+    .header__menu__link {
+        width: 100%;
+    }
 
-  .header__redline {
-    background-image: none;
-  }
+    .header__redline {
+        background-image: none;
+    }
 
-  .header__advertising {
-    display: none;
-  }
+    .header__advertising {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) /* Phone */ {
 
-  .header__search {
-    display: none;
-  }
+    .header__search {
+        display: none;
+    }
 
-  /* показывать лупу со ссылкой на https://www.info-credit.com/search.php */
+    .header__search-mobile {
+        display: block;
+        padding-right: 20px;
+        height: 17px;
+        width: 15px;
+        background-image:  url("../img/common.png");
+        background-position: -140px -41px;
+    }
 
-  .header__menu__link {
-    padding: 2px 0;
-    min-height: 25px;
-    font-size: 10px;
-  }
+    /* показывать лупу со ссылкой на https://www.info-credit.com/search.php */
 
-  .header__redline__caption {
-    font-size: 12px;
-  }
+    .header__menu__link {
+        padding: 2px 0;
+        min-height: 25px;
+        font-size: 10px;
+    }
+
+    .header__redline__caption {
+        font-size: 12px;
+    }
 }

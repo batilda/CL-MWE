@@ -62,10 +62,11 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-window.addEventListener("mousedown", function (evt) {
-     evt.preventDefault();
-     if ((!(headerAdvertising.classList.contains("js-visually-hidden"))) &&
-		      (evt.target.closest(".js-header__advertising__window") === null)) {
-           windowAdvertising.classList.add("js-visually-hidden");
-				 }
- });
+
+// window.addEventListener("mousedown", function (evt) {
+//      evt.preventDefault();
+//      if ((!(headerAdvertising.classList.contains("js-visually-hidden"))) &&
+// 		      (evt.target.closest(".js-header__advertising__window") === null)) {
+//            windowAdvertising.classList.add("js-visually-hidden");
+// 				 }
+//  });
