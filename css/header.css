@@ -168,40 +168,47 @@ header {
     background: linear-gradient(to bottom, #919191 0%, #919191 50%, #555555 50% ,#555555 100%);
 }
 
-.header__menu__link:focus {
-    outline: 1px solid #eecb83;
-}
+/*.header__menu__link:focus {*/
+    /*outline: 1px solid #eecb83;*/
+/*}*/
 
-.header__menu__link:active,
-.js-header__menu__link--active1 {
+.header__menu__link:active {
     color: #333;
     background: linear-gradient(to bottom, #eff1ee, #eff1ee);
 }
 
 .header__submenu__list {
-    position:absolute;
     display: none;
-    top: 100%;
-    left: 0;
+    position:absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.js-header__submenu__list--active1 {
+.header__menu__item:hover .header__submenu__list
+ {
     margin: 0 auto;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    width: 625px;
-    height: 35px;
+    align-items: center;
+    width: 958px;
+    height: 30px;
     list-style: none;
     background-color: #f7f7f7;
+    z-index: 1;
 }
 
 .header__submenu__item {
-    background-color: #cccccc;
+    background-color: #ccc;
     padding: 0 26px;
-    box-shadow: 3px 0 #cecece;
+    border-left: 1px solid #6a6a6a;
+    /*box-shadow: 3px 0 #cecece;*/
+    flex-grow: 1;
+}
+
+.header__submenu__item:hover {
+    background-color: #aaa;
 }
 
 .header__submenu__link {
@@ -210,22 +217,25 @@ header {
     font-size: 13px;
     color: #333;
     font-family: inherit;
-    line-height: 35px;
+    line-height: 30px;
     text-transform: uppercase;
     text-align: center;
 }
-
 
 .header__submenu__item:last-child .header__submenu__link {
     box-shadow: none;
 }
 
-.header__whiteline1 {
-    min-height: 35px;
-}
+/*.header__menu__item:hover ~ .header__whiteline {*/
+    /*min-height: 0;*/
+/*}*/
+
+/*header__whiteline {*/
+    /*min-height: 25px;*/
+/*}*/
 
 .header__redline {
-    min-height: 29px;
+    min-height: 30px;
     background-color: #a82020;
     /*background-image: url("../img/sprite-all-pages.png");*/
     background-repeat: no-repeat;
